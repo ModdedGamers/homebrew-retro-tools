@@ -3,7 +3,7 @@ class Asl < Formula
   homepage "http://john.ccac.rwth-aachen.de:8000/as/"
   url "http://john.ccac.rwth-aachen.de:8000/ftp/as/source/c_version/asl-current.tar.bz2"
   version "Latest"
-  sha256 "d3ad93061bb9e3ffe51509ee6cedbad11f893c9416b6b2fd6c38e2b4d96578c9"
+  sha256 :no_check
   license ""
 
   def install
