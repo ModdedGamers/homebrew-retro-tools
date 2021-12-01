@@ -2,9 +2,9 @@ class Asl < Formula
   desc "AS is a portable macro cross assembler for many microprocessors and -controllers"
   homepage "http://john.ccac.rwth-aachen.de:8000/as/"
   url "http://john.ccac.rwth-aachen.de:8000/ftp/as/source/c_version/asl-current.tar.bz2"
-  version "Latest"
-  sha256 :no_check
+  version "current"
   license ""
+  revision 1
 
   def install
     cp "Makefile.def-samples/Makefile.def-x86_64-osx", "Makefile.def"
