@@ -8,7 +8,7 @@ class Asl < Formula
 
   def install
     cp "Makefile.def-samples/Makefile.def-x86_64-osx", "Makefile.def"
-    if Hardware.CPU.arm?
+    if Hardware::CPU.arm?
       inreplace "Makefile.def", "-arch x86_64", "-arch aarch64"
     end
     system "make"
