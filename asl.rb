@@ -8,6 +8,9 @@ class Asl < Formula
 
   def install
     cp "Makefile.def-samples/Makefile.def-x86_64-osx", "Makefile.def"
+    if Hardware.CPU.arm?
+      inreplace "Makefile.def", "-arch x86_64", "-arch aarch64"
+    end
     system "make"
     bin.install "asl", "plist", "alink", "pbind", "p2hex", "p2bin"
     include.install Dir["include/*"]
